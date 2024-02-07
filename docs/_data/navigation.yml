@@ -1,0 +1,7 @@
+items:
+- title: Home
+  url: /
+- title: Donate
+  url: /donate/
+- title: About
+  url: /about/
