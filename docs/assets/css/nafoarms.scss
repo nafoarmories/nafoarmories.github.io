@@ -1,0 +1,62 @@
+---
+---
+
+@import url("{{ 'style.css?v=' | append: site.github.build_revision }}");
+
+.nafoarms-header {
+    background-color: #4276b6;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content min-content auto;
+    position: relative;
+}
+
+.nafoarms-masthead {
+    padding: 0.5rem;
+}
+
+.nafoarms-title {
+    grid-row: 1;
+    grid-column: 1;
+    text-align: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    color: white;
+    font-weight: bolder;
+}
+
+// add an image before the title ensuring it appears to the left
+.nafoarms-title:before {
+    content: url("{{ 'assets/images/logo_small.png' | relative_url }}");
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nafoarms-motto {
+    grid-row: 2;
+    grid-column: 1;
+    text-align: left;
+    font-style: italic;
+    padding: 0.5rem;
+}
+
+.nafoarms-navbar {
+    grid-row: 3;
+    grid-column: 1;
+    background-color: goldenrod;
+}
+
+.nafoarms-navbar-anchor {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+#banner {
+    width: 100%;
+}
