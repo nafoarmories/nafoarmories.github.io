@@ -18,11 +18,19 @@
   <body>
 
       <header class="nafoarms-header">
-        <!-- ensure the image and h1 are on the same line-->
-        <span class="nafoarms-masthead">
-          <h1 class="nafoarms-title">{{ site.title }}</h1>
-        </span>
-        <p class="nafoarms-motto">{{ site.description }}</p>
+        <div class="nafoarms-masthead">
+          <div class="nafoarms-logo">
+            <a href="{{ site.github.repository_url }}">
+              <img src="{{ 'assets/images/logo_small.png' | relative_url }}" alt="{{ site.title }}">
+            </a>
+          </div>
+          <div class="nafoarms-title">
+            <h1 class="nafoarms-title">{{ site.title }}</h1>
+          </div>
+          <div class="nafoarms-motto">
+            {{ site.description }}
+          </div>
+        </div>
         <span class="nafoarms-navbar">
             {% for item in site.data.navigation.items %}
                 <a class="nafoarms-navbar-anchor" href="{{ item.url | relative_url }}">{{ item.title }}</a>
