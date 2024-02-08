@@ -1,6 +1,6 @@
 ---
 layout: default # change this too!
-title: About
+title: How to Donate
 permalink: /donate/
 ---
 
@@ -8,5 +8,5 @@ permalink: /donate/
 
 There are a few ways you can help us financially:
 
-* Paypal: blablabla
-* Etsy: blablabla
+* Paypal: okawo198@gmail.com
+* Etsy: [The NAFO Armories Store](https://freeukraineco.etsy.com)
