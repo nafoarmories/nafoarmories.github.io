@@ -9,4 +9,5 @@ permalink: /donate/
 There are a few ways you can help us financially:
 
 * Paypal: okawo198@gmail.com
+* Monobank: [NAFO Armories Tip Jar](https://send.monobank.ua/jar/41VstyWxB9)
 * Etsy: [The NAFO Armories Store](https://freeukraineco.etsy.com)
