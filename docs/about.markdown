@@ -4,4 +4,6 @@ title: About
 permalink: /about/
 ---
 
-NAFO Armories is ... 
+# About NAFO Armories
+
+Webster's Dictionary defines...

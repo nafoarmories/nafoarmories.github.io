@@ -40,6 +40,19 @@
 
     <div class="wrapper">
       <section>
+        {% assign latest_update = site.posts | where: "categories", "update" | first %}
+
+        {% if latest_update %}
+        <h1>News</h1>
+          <li>
+            <h2><a href="{{ latest_update.url }}">{{ latest_update.title }}</a></h2>
+            <blockquote>
+              <p>{{ latest_update.date | date_to_string }} - {{ latest_update.author }}</p>
+              {{ latest_update.excerpt }}
+            </blockquote>
+          </li>
+        {% endif %}
+        <h1></h1>
         {{ content }}
         </section>
       <footer>
