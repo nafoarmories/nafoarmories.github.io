@@ -6,7 +6,7 @@
         {% if latest_update %}
         <h1>News</h1>
           <li>
-            <h2><a href="{{ latest_update.url }}">{{ latest_update.title }}</a></h2>
+            <h2><a href="{{ latest_update.url | relative_url }}">{{ latest_update.title }}</a></h2>
             <blockquote>
               <p>{{ latest_update.date | date_to_string }} - {{ latest_update.author }}</p>
               {{ latest_update.excerpt }}
