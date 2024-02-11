@@ -70,6 +70,15 @@ body {
     margin-top: 0;
 }
 
+.nafoarms-main {
+    background-color: $header-content-color;
+    flex: 2;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 1rem;
+    margin-top: 0px; // override the theme
+}
+
 @media (min-width: 768px) {
     .nafoarms-title-text {
         font-size: $header-title-font-size;
@@ -84,6 +93,9 @@ body {
         img {
             content: url("{{ 'assets/images/pride_100x100.png' | relative_url }}");
         }
+    }
+    .nafoarms-main {
+        width: 80%;
     }
 }
 
@@ -101,6 +113,10 @@ body {
         img {
             content: url("{{ 'assets/images/pride_75x75.png' | relative_url }}");
         }
+    }
+    .nafoarms-main {
+        width: 100%;
+        margin-left: 1rem;
     }
 }
 
@@ -137,15 +153,7 @@ body {
     flex: 1;
 }
 
-.nafoarms-main {
-    background-color: $header-content-color;
-    flex: 2;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 1rem;
-    margin-top: 0px; // override the theme
-    width: 80%;
-}
+
 
 .nafoarms-footer {
     flex: 3;
