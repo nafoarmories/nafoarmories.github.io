@@ -95,6 +95,10 @@ body {
     width: 100%;
 }
 
+.nafoarms-tweet {
+    text-align: center;
+}
+
 .nafoarms-header {
     flex: 1;
 }
@@ -104,6 +108,13 @@ body {
     flex: 2;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    padding-top: 1rem;
     margin-top: 0px; // override the theme
     width: 80%;
+}
+
+.nafoarms-footer {
+    flex: 3;
+    position: relative;
+    bottom: 0;
 }
