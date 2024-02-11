@@ -5,6 +5,7 @@
 
 $header-background-color: #4276b6;
 $header-navbar-color: goldenrod;
+$header-content-color: white;
 $header-font-color: white;
 
 /*
@@ -16,6 +17,13 @@ $header-font-color: white;
 
 */
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
 .nafoarms-header {
     background-color: $header-background-color;
     padding: 0;
@@ -24,7 +32,7 @@ $header-font-color: white;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: min-content min-content;
-    position: fixed;
+//    position: fixed;
 }
 
 .nafoarms-masthead {
@@ -72,6 +80,7 @@ $header-font-color: white;
     grid-row: 3;
     grid-column: 1;
     background-color: $header-navbar-color;
+    text-align: center;
     padding-top: 0.25rem;
 }
 
@@ -86,7 +95,15 @@ $header-font-color: white;
     width: 100%;
 }
 
-section {
+.nafoarms-header {
+    flex: 1;
+}
+
+.nafoarms-main {
+    background-color: $header-content-color;
+    flex: 2;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    margin-top: 0px; // override the theme
+    width: 80%;
 }
