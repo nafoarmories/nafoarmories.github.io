@@ -10,9 +10,9 @@ $header-navbar-color: goldenrod;
 $header-content-color: white;
 $header-font-color: white;
 $header-title-font-size: 4rem;
-$header-title-font-size-mobile: 2rem;
+$header-title-font-size-mobile: 3rem;
 $header-motto-font-size: 1rem;
-$header-motto-font-size-mobile: 0.5rem;
+$header-motto-font-size-mobile: 0.75rem;
 
 body {
     display: flex;
@@ -92,6 +92,8 @@ body {
     .nafoarms-logo {
         img {
             content: url("{{ 'assets/images/pride_100x100.png' | relative_url }}");
+            width: 100px;
+            height: 100px;
         }
     }
     .nafoarms-main {
@@ -111,7 +113,9 @@ body {
     };
     .nafoarms-logo {
         img {
-            content: url("{{ 'assets/images/pride_75x75.png' | relative_url }}");
+            content: url("{{ 'assets/images/pride_100x100.png' | relative_url }}");
+            width: 75px;
+            height: 75px;
         }
     }
     .nafoarms-main {
