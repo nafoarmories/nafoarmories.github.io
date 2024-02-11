@@ -18,7 +18,7 @@
   </head>
   <body>
 
-      <header class="nafoarms-header">
+      <div class="nafoarms-header">
         <div class="nafoarms-masthead">
           <div class="nafoarms-logo">
             <a href="{{ site.github.repository_url }}">
@@ -37,10 +37,9 @@
                 <a class="nafoarms-navbar-anchor" href="{{ item.url | relative_url }}">{{ item.title }}</a>
             {% endfor %}
         </span>
-      </header>
+      </div>
 
-    <div class="wrapper">
-      <section>
+      <div class="nafoarms-main">
         {% assign latest_update = site.posts | where: "categories", "update" | first %}
 
         {% if latest_update %}
@@ -55,13 +54,12 @@
         {% endif %}
         <h1></h1>
         {{ content }}
-        </section>
-      <footer>
+        </div>
+      <div class="nafoarms-footer">
         {% if site.github.is_project_page %}
           <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></small></p>
-      </footer>
-    </div>
+      </div>
   </body>
 </html>
