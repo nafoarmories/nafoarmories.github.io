@@ -4,6 +4,7 @@ title:  "Valentine's Day Bake Sale"
 date:   2024-02-07 10:52:18 +0100
 author: Wende
 categories: raffle update valentines-day
+image: assets/images/heartcookies.png
 ---
 
 We've launched our [bake sale](https://x.com/Wendehopes/status/1755309421339775302?s=20)!
