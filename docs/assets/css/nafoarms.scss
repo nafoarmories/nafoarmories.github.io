@@ -1,14 +1,14 @@
 ---
 ---
 
-$font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$font-family:  Roboto, Helvetica, Arial, sans-serif;
 $body-background-color: #4176b633;
 $header-background-color: #4276b6;
 $header-navbar-color: goldenrod;
 $header-content-color: white;
 $header-font-color: white;
-$header-title-font-size: 2rem;
-$header-title-font-size-mobile: 1.5rem;
+$header-title-font-size: 4rem;
+$header-title-font-size-mobile: 3rem;
 $header-motto-font-size: 1rem;
 $header-motto-font-size-mobile: 0.75rem;
 
@@ -50,11 +50,6 @@ body {
     margin-block-end: 0;
 }
 
-.nafoarms-logo {
-    padding-right: 0.5rem;
-    padding-top: 0.25rem;
-    padding-left: 0.25rem;
-}
 .nafoarms-motto {
     vertical-align: top;
     font-style: italic;
@@ -73,12 +68,7 @@ body {
     margin-top: 0px; // override the theme
 }
 
-@media (min-width:640px) { body {font-size:1rem;} }
-
 @media (min-width: 768px) {
-    body {
-        font-size: 1.1rem;
-    }
     .nafoarms-title-text {
         font-size: $header-title-font-size;
         color: $header-font-color;
@@ -113,8 +103,7 @@ body {
         margin: 0;
     };
     .nafoarms-motto {
-        //font-size: $header-motto-font-size-mobile;
-        display: none;
+        font-size: $header-motto-font-size-mobile;
     };
     .nafoarms-logo {
         img {
@@ -123,17 +112,11 @@ body {
             max-height: 100px;
         }
     }
-    .nafoarms-main {
-        width: 100%;
-        margin-left: 1rem;
-    }
 }
 
 @media (min-width:960px) { 
-    body {font-size:1.2rem;} 
 }
 @media (min-width:1100px) { 
-    body {font-size:1.5rem;} 
     .nafoarms-logo {
         img {
             content: url("{{ 'assets/images/pride_100x100.png' | relative_url }}");
