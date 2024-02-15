@@ -1,11 +1,10 @@
 title: NAFO Armories
 description: That one group of crazy doggos making [redacted]
+tagline: That one group of crazy doggos making [redacted]
 email: your-email@example.com
 baseurl: "nafoarms-dev"
 url: "https://nafoarmories.org"
-twitter_username: nafoarmories
+logo: /assets/images/pride_100x100.png
+twitter:username: nafoarmories
 github_username:  nafoarmories
 repository: nafoarmories/nafoarmories.github.io # this line seems required by jekyll-3.9.4 or else it aborts...
-plugins:
-  - jekyll-feed
-
