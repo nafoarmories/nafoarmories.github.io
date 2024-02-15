@@ -96,7 +96,8 @@ body {
         }
     }
     .nafoarms-main {
-        width: 80%;
+        min-width: 80vw;
+        max-width: 100vw;
     }
 }
 
@@ -172,8 +173,6 @@ body {
 .nafoarms-header {
     flex: 1;
 }
-
-
 
 .nafoarms-footer {
     flex: 3;
