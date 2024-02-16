@@ -28,9 +28,11 @@
             </div>
           </div>
         </div>
-        <span class="nafoarms-navbar">
+        <div class="nafoarms-navbar">
             {% for item in site.data.navigation.items %}
-                <a class="nafoarms-navbar-anchor" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                <div class="nafoarms-navitem">
+                  <a class="nafoarms-navbar-anchor" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                </div>
             {% endfor %}
-        </span>
+        </div>
       </div>
