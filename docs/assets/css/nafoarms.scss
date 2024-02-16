@@ -1,7 +1,7 @@
 ---
 ---
 
-$font-family:  Roboto, Helvetica, Arial, sans-serif;
+$font-family: Roboto, Helvetica, Arial, sans-serif;
 $body-background-color: #4176b633;
 $header-background-color: #4276b6;
 $header-navbar-color: goldenrod;
@@ -12,7 +12,9 @@ $header-title-font-size-mobile: 3rem;
 $header-motto-font-size: 1rem;
 $header-motto-font-size-mobile: 0.75rem;
 
-html { font-size:100%; }
+html {
+    font-size: 100%;
+}
 
 body {
     display: flex;
@@ -29,16 +31,17 @@ body {
     background-color: $header-background-color;
     padding: 0;
     width: 100%;
-//    height: 100%;
+    //    height: 100%;
     display: flex;
     flex-direction: column;
-//    position: fixed;
+    align-items: center;
+    //    position: fixed;
 }
 
 .nafoarms-masthead {
     display: flex;
     flex: 3 1 auto;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
     justify-items: center;
@@ -59,6 +62,16 @@ body {
     display: inline-block;
 }
 
+.nafoarms-navbar {
+    background-color: $header-navbar-color;
+    padding-top: 0.25rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: row;
+}
+
 .nafoarms-main {
     background-color: $header-content-color;
     flex: 2;
@@ -76,10 +89,16 @@ body {
         color: $header-font-color;
         font-weight: 900;
         margin: 0;
-    };
+    }
+
+    ;
+
     .nafoarms-motto {
         font-size: $header-motto-font-size;
-    };
+    }
+
+    ;
+
     .nafoarms-logo {
         img {
             content: url("{{ 'assets/images/pride_100x100.png' | relative_url }}");
@@ -91,18 +110,25 @@ body {
 
 @media (max-width: 768px) {
     .nafoarms-masthead {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
     }
+
     .nafoarms-title-text {
         font-size: $header-title-font-size-mobile;
         color: $header-font-color;
         font-weight: 900;
         margin: 0;
-    };
+    }
+
+    ;
+
     .nafoarms-motto {
         font-size: $header-motto-font-size-mobile;
-    };
+    }
+
+    ;
+
     .nafoarms-logo {
         img {
             content: url("{{ 'assets/images/pride_100x100.png' | relative_url }}");
@@ -110,11 +136,15 @@ body {
             max-height: 100px;
         }
     }
+
+    .nafoarms-navbar {
+        flex-direction: column;
+    }
 }
 
-@media (min-width:960px) { 
-}
-@media (min-width:1100px) { 
+@media (min-width:960px) {}
+
+@media (min-width:1100px) {
     .nafoarms-logo {
         img {
             content: url("{{ 'assets/images/pride_100x100.png' | relative_url }}");
@@ -122,12 +152,6 @@ body {
             max-height: 200px;
         }
     }
-}
-
-.nafoarms-navbar {
-    background-color: $header-navbar-color;
-    text-align: center;
-    padding-top: 0.25rem;
 }
 
 .nafoarms-navbar-anchor {
@@ -158,4 +182,47 @@ body {
 .nafoarms-footer {
     flex: 3;
     position: relative;
+}
+
+.nafoarms-donategallery {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nafoarms-donateimage {
+    max-width: 60vw;
+    overflow: hidden;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.nafoarms-donatelinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem;
+
+    // increase the spacing between divs
+    div {
+        margin: 0.5rem;
+    }
+}
+
+.nafoarms-donatelink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40vw;
+
+    img {
+        max-width: 10vw;
+        height: auto;
+    }
 }
