@@ -3,5 +3,7 @@ items:
   url: /
 - title: Donate
   url: /donate/
+- title: Gallery
+  url: /gallery/
 - title: About
   url: /about/
