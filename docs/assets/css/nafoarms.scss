@@ -226,3 +226,30 @@ body {
         height: auto;
     }
 }
+
+.nafoarms-gallery {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+.nafoarms-galleryimage {
+    max-width: 10vw;
+    overflow: hidden;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    // add a little space between images
+    margin: 0.5rem;
+    // and a shadow
+    box-shadow: 2px 2px 2px #c2c2c2;  
+}
+
+.nafoarms-galleryimage:hover {
+    box-shadow: 4px 4px 4px #c2c2c2;  
+}
