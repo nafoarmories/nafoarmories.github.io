@@ -6,16 +6,14 @@ permalink: /gallery/
 
 # Gallery
 
-TODO
+Click on any image to view it in full size.
 
-<div class="nafoarms-donategallery">
-    <div class="nafoarms-donateimage">
-        <img src="/assets/images/heartcookies.png" alt="Example 2">
-    </div>
-    <div class="nafoarms-donateimage">
-        <img src="/assets/images/logo_small.jpg" alt="Example 1">
-    </div>
-    <div class="nafoarms-donateimage">
-        <img src="/assets/images/donate.png" alt="Example 3">
-    </div>
+<div class="nafoarms-gallery">
+    {% for image in site.static_files %}
+        {% if image.path contains 'images/gallery' %}
+            <div class="nafoarms-galleryimage">
+                <a href="{{ site.baseurl }}{{ image.path }}"><img src="{{ site.baseurl }}{{ image.path }}" alt="image" /></a>
+            </div>
+        {% endif %}
+    {% endfor %}
 </div>
