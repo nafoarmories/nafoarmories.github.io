@@ -28,5 +28,5 @@ There are a few ways you can help us financially:
 Here are some of the things we produce for Ukraine
 
 <div class="nafoarms-donateimage">
-    <a href="/gallery/"><img src="/assets/images/donate.png" alt="Gallery"></a>
+    <a href="/gallery/"><img src="/assets/images/gallery/donate.png" alt="Gallery"></a>
 </div>
