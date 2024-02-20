@@ -9,15 +9,15 @@ permalink: /donate/
 There are a few ways you can help us financially:
 
 <div class="nafoarms-donatelinks">
-    <div class="nafoarms-donatelink">
+    <div class="nafoarms-donatelink nafoarms-donateimage">
         <img src="{{ '/assets/images/paypal-logo.png' | relative_url }}" alt="PayPal">
         <p><b>okawo198@gmail.com</b></p>
     </div>
-    <div class="nafoarms-donatelink">
+    <div class="nafoarms-donatelink nafoarms-donateimage">
         <img src="{{ '/assets/images/monobank-logo.png' | relative_url }}" alt="Monobank">
         <a href="https://send.monobank.ua/jar/41VstyWxB9">NAFO Armories Tip Jar</a>
     </div>
-    <div class="nafoarms-donatelink">
+    <div class="nafoarms-donatelink nafoarms-donateimage">
         <img src="{{ '/assets/images/etsy-logo.png' | relative_url }}" alt="The NAFO Armories Etsy Store">
         <a href="https://freeukraineco.etsy.com">The NAFO Armories Etsy Store</a>
     </div>    

@@ -192,11 +192,10 @@ body {
 }
 
 .nafoarms-donateimage {
-    max-width: 60vw;
-    overflow: hidden;
+    border-bottom: dotted 1px #c2c2c2;
 
     img {
-        max-width: 100%;
+        max-width: 20vw;
         height: auto;
     }
 }
