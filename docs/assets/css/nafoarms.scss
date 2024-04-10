@@ -100,9 +100,15 @@ body {
     height: 100%;
 }
 
+.nafoarms-main p {
+    width: min(45vw, 80%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .nafoarms-main img {
     border-radius: 15px;
-    width: min(35rem, 90%);
+    width: min(55rem, 90%);
 }
 
 .nafoarms-footer {
