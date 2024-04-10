@@ -4,7 +4,7 @@
 
 layout: home
 title:  "NAFO Armories"
-image: assets/images/pride_100x100.png
+cover_image: assets/images/pride_100x100.png
 ---
 
 ## Hi
