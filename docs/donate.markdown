@@ -1,6 +1,6 @@
 ---
 layout: default # change this too!
-title: How to Donate
+title: Donate
 permalink: /donate/
 ---
 
