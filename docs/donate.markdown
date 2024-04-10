@@ -2,6 +2,7 @@
 layout: default # change this too!
 title: Donate
 permalink: /donate/
+image: assets/images/pride_100x100.png
 ---
 
 # How to Donate
