@@ -3,6 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title:  "NAFO Armories"
+image: assets/images/pride_100x100.png
 ---
 
 ## Hi
