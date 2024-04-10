@@ -5,9 +5,9 @@ permalink: /donate/
 image: assets/images/pride_100x100.png
 ---
 
-# How to Donate
+# Donate
 
-There are a few ways you can help us financially:
+There are a few ways you can help us financially
 
 <script>
     function copyToClipboard(text) {
@@ -42,7 +42,7 @@ There are a few ways you can help us financially:
 
 ## Where Your Money Goes
 
-Here are some of the things we produce for Ukraine
+Here are some of the things we manufacture and source for the Ukrainian Armed Forces
 
 <div class="dono-img">
     <a href="{{ '/gallery/' | relative_url }}"><img src="{{ '/assets/images/gallery/donate.png' | relative_url }}" alt="Gallery"></a>

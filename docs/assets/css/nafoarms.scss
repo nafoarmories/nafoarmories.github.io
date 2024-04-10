@@ -102,6 +102,7 @@ body {
 
 .nafoarms-main img {
     border-radius: 15px;
+    width: min(35rem, 90%);
 }
 
 .nafoarms-footer {
@@ -158,6 +159,29 @@ body {
 .dono-img img {
     border-radius: 25px;
     width: min(30rem, 90%);
+}
+
+.stats {
+    border-radius: 25px;
+    padding: 10px;
+    width: min(30rem, 90%);
+    background-color: lightcyan;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stats-item {
+    padding: 5px 15px;
+    border-radius: 25px;
+    background-color: #66fac9;
+    width: min(20rem, 80%);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .link-button {
