@@ -2,6 +2,7 @@
 layout: default # change this too!
 title: Gallery
 permalink: /gallery/
+image: assets/images/pride_100x100.png
 ---
 
 # Gallery
