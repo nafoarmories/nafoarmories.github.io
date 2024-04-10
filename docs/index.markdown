@@ -6,9 +6,10 @@ layout: home
 title:  "NAFO Armories"
 image: assets/images/pride_100x100.png
 droprig_count: 718
-leyley_couont: 128
+leyley_count: 128
 mavic_count: 28
 fin_count: 10k+
+total_raised: 77395$
 ---
 
 # So, what do we do here?
@@ -25,10 +26,13 @@ We do both manufacturing as well as procurement for stuff like drones
 		<h2>Drop Rig Systems: {{ page.droprig_count }}</h2>
 	</div>
 	<div class="stats-item center">
-		<h2>Leyleys: {{ page.leyley_couont }}</h2>
+		<h2>Leyleys: {{ page.leyley_count }}</h2>
 	</div>
 	<div class="stats-item center">
 		<h2>Fins/Tails: {{ page.fin_count }}</h2>
+	</div>
+	<div class="stats-item center">
+		<h2>Total Money Raised: {{ page.total_raised }}</h2>
 	</div>
 </div>
 

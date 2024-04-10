@@ -74,22 +74,6 @@ body {
     border-radius: 15px;
 }
 
-.nafoarms-news {
-    background-color: #d7faf2;
-    padding: 0.75rem;
-    flex: 2;
-    border-radius: 40px;
-}
-
-.nafoarms-news:nth-child(even), {
-    background-color: #fce1f8;
-}
-
-.nafoarms-news img {
-    border-radius: 25px;
-    width: min(30rem, 90%);
-}
-
 .nafoarms-main {
     background-color: $header-content-color;
     flex: 2;
@@ -109,6 +93,22 @@ body {
 .nafoarms-main img {
     border-radius: 15px;
     width: min(55rem, 90%);
+}
+
+.nafoarms-news {
+    background-color: #d7faf2;
+    padding: 0.75rem;
+    flex: 2;
+    border-radius: 40px;
+}
+
+.nafoarms-news:nth-child(even), {
+    background-color: #fce1f8;
+}
+
+.nafoarms-news img {
+    width: min(30rem, 90%);
+    border-radius: 25px;
 }
 
 .nafoarms-footer {
