@@ -1,0 +1,26 @@
+{% include header.html %}
+      <div class="nafoarms-main center">
+        <h1>{{ page.title }}</h1>
+        <div>
+          {{ content }}
+        </div>
+
+        {% assign update_posts = site.posts | where: "categories", "update" | sort: "date" | reverse %}
+        <div>
+        {% for pg_post in update_posts %}
+          <div class="nafoarms-news">
+            <h1>
+              {{ pg_post.title }}
+            </h1>
+            <a href="{{ pg_post.url | relative_url }}">
+              <img src="{{ pg_post.image | relative_url }}">
+            </a>
+            <blockquote>
+              <p>{{ pg_post.date | date_to_string }} - {{ pg_post.author }}</p>
+              {{ pg_post.excerpt }}
+            </blockquote>
+          </div>
+        {% endfor %}
+        </div>
+      </div>
+{% include footer.html %}

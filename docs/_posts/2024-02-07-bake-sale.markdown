@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Valentine's Day Bake Sale"
-date:   2024-02-07 10:52:18 +0100
+date:   2024-02-07
 author: Wende
 categories: raffle update valentines-day
 image: assets/images/heartcookies.png
@@ -9,6 +9,6 @@ image: assets/images/heartcookies.png
 
 We've launched our [bake sale](https://x.com/Wendehopes/status/1755309421339775302?s=20)!
 
-<div class="nafoarms-tweet">
-<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">🍪 These are incredible. My favorite “U DMG MY BRAIN” 💗😂😂 <br>Thank you Mike for all you do and the amazing goods of love for Ukraine you make. Thank you and thanks you donors for supporting <a href="https://twitter.com/NAFOArmories?ref_src=twsrc%5Etfw">@NAFOArmories</a>. You all make it work. We will win together 🙏❤️‍🔥🇺🇦 <a href="https://t.co/IuBc3F0dyi">https://t.co/IuBc3F0dyi</a> <a href="https://t.co/Q2yo5zoVop">pic.twitter.com/Q2yo5zoVop</a></p>&mdash; Wende🎗️🌻🏴‍☠️ (@Wendehopes) <a href="https://twitter.com/Wendehopes/status/1755309421339775302?ref_src=twsrc%5Etfw">February 7, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div>
+	<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">🍪 These are incredible. My favorite “U DMG MY BRAIN” 💗😂😂 <br>Thank you Mike for all you do and the amazing goods of love for Ukraine you make. Thank you and thanks you donors for supporting <a href="https://twitter.com/NAFOArmories?ref_src=twsrc%5Etfw">@NAFOArmories</a>. You all make it work. We will win together 🙏❤️‍🔥🇺🇦 <a href="https://t.co/IuBc3F0dyi">https://t.co/IuBc3F0dyi</a> <a href="https://t.co/Q2yo5zoVop">pic.twitter.com/Q2yo5zoVop</a></p>&mdash; Wende🎗️🌻🏴‍☠️ (@Wendehopes) <a href="https://twitter.com/Wendehopes/status/1755309421339775302?ref_src=twsrc%5Etfw">February 7, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>

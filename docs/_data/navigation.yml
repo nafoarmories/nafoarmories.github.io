@@ -1,6 +1,8 @@
 items:
 - title: Home
   url: /
+- title: Posts
+  url: /posts/
 - title: Donate
   url: /donate/
 - title: Gallery

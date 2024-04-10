@@ -1,17 +1,29 @@
 {% include header.html %}
 
-      <div class="nafoarms-main">
         {% assign latest_update = site.posts | where: "categories", "update" | first %}
+        <div class="nafoarms-main center">
 
-        {% if latest_update %}
-        <h1>News</h1>
-          <h2><a href="{{ latest_update.url | relative_url }}">{{ latest_update.title }}</a></h2>
-            <blockquote>
-              <p>{{ latest_update.date | date_to_string }} - {{ latest_update.author }}</p>
-              {{ latest_update.excerpt }}
-            </blockquote>
-        {% endif %}
-        {{ content }}
+          {% if latest_update %}
+          <div>
+            <div class="nafoarms-news">
+              <h2>News</h2>
+              <h1>
+                {{ latest_update.title }}
+              </h1>
+              <a href="{{ latest_update.url | relative_url }}">
+                <img src="{{ latest_update.image | relative_url }}">
+              </a>
+              <blockquote>
+                <p>{{ latest_update.date | date_to_string }} - {{ latest_update.author }}</p>
+                {{ latest_update.excerpt }}
+              </blockquote>
+            </div>
+          </div>
+          {% endif %}
+
+          <div>
+            {{ content }}
+          </div>
         </div>
 
 {% include footer.html %}
