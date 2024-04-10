@@ -6,7 +6,7 @@ categories: manufacturing update leyley
 image: assets/images/leyleys-v2-siluette.png
 ---
 
-Leyley V2 has finally passed review, with the first prototypes expected to be ready for testing in the coming week.
+Leyley V2 has finally passed review, with the first prototypes expected to be ready for testing in the coming weeks.
 
 
 ![leyleys]({{ "assets/images/leyleys-v2-siluette.png" | relative_url }})
