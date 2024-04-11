@@ -18,4 +18,4 @@ If luck has it, by the end of the month it will be in full scale production.
 
 While we are working on Leyley-V2, you can help us deliver current version Leyleys and other aid to the Ukrainian Armed Forces!
 
-<a href="/donate/" class="link-button">Donate</a>
+{% include donate_button.html %}
