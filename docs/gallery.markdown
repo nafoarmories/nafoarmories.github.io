@@ -7,7 +7,7 @@ image: assets/images/pride_100x100.png
 
 # Gallery
 
-Click on any image to view it in full size.
+Click on any image to view it in full size
 
 <div class="nafoarms-gallery">
     {% for image in site.static_files %}
