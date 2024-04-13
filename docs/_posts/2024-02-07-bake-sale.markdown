@@ -13,4 +13,7 @@ We've launched our [bake sale](https://x.com/Wendehopes/status/17553094213397753
 	<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">🍪 These are incredible. My favorite “U DMG MY BRAIN” 💗😂😂 <br>Thank you Mike for all you do and the amazing goods of love for Ukraine you make. Thank you and thanks you donors for supporting <a href="https://twitter.com/NAFOArmories?ref_src=twsrc%5Etfw">@NAFOArmories</a>. You all make it work. We will win together 🙏❤️‍🔥🇺🇦 <a href="https://t.co/IuBc3F0dyi">https://t.co/IuBc3F0dyi</a> <a href="https://t.co/Q2yo5zoVop">pic.twitter.com/Q2yo5zoVop</a></p>&mdash; Wende🎗️🌻🏴‍☠️ (@Wendehopes) <a href="https://twitter.com/Wendehopes/status/1755309421339775302?ref_src=twsrc%5Etfw">February 7, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 
+
+Thank you so much Mike The Baker for helping us fundraise for the Ukrainian Armed Forces!
+
 {% include donate_button.html %}
