@@ -7,16 +7,16 @@
           <div>
             <div class="nafoarms-news">
               <h2>News</h2>
-              <h1>
-                {{ latest_update.title }}
-              </h1>
-              <a href="{{ latest_update.url | relative_url }}">
+              <a href="{{ latest_update.url | relative_url }}" class="nafoarms-news-link">
+                <h1>
+                  {{ latest_update.title }}
+                </h1>
                 <img src="{{ latest_update.image | relative_url }}">
+                <blockquote>
+                  <p>{{ latest_update.date | date_to_string }} - {{ latest_update.author }}</p>
+                  {{ latest_update.excerpt }}
+                </blockquote>
               </a>
-              <blockquote>
-                <p>{{ latest_update.date | date_to_string }} - {{ latest_update.author }}</p>
-                {{ latest_update.excerpt }}
-              </blockquote>
             </div>
           </div>
           {% endif %}

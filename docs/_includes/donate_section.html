@@ -1,0 +1,29 @@
+<script>
+    function copyToClipboard(text) {
+      // Copy the text inside the text field
+      navigator.clipboard.writeText(text);
+    }
+</script>
+
+<div class="dono-elements">
+    {% for item in include.links %}
+    {% if item.text == true %}
+    <div class="link" onClick="copyToClipboard('{{ item.name }}')">
+    {% else %}
+    <div class="link">
+    {% endif %}
+        {% if item.img %}
+        <img src="{{ item.img | relative_url }}">
+        {% endif %}
+        {% if item.text == true %}
+        <div class="tooltip">
+            <p class="tooltiptext">Copy to Clipboard</p>
+            <p>{{ item.name }}</p>
+        </div>
+        {% endif %}
+        {% if item.link %}
+        <a href="{{ item.link | relative_url }}">{{ item.name }}</a>
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>
