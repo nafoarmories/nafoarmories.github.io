@@ -11,6 +11,6 @@ We are a small group of people working on manufacturing and supply of military a
 
 We haven't mirrored all of our work here yet, but we will soon!
 
-Our team twitter: [@NAFOArmories](https://twitter.com/NAFOArmories)
+Our team twitter: {% include handle_link.md thing=site.data.twitter.team %}
 
-Our team bluesky: [@nafoarmories.bsky.social](https://bsky.app/profile/nafoarmories.bsky.social)
+Our team bluesky: {% include handle_link.md thing=site.data.bluesky.team %}

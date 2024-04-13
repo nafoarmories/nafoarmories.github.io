@@ -5,26 +5,15 @@
 layout: home
 title:  "NAFO Armories"
 image: assets/images/pride_100x100.png
-stat_items:
-- title: Drop Rig Systems
-  count: 718
-- title: Leyleys
-  count: 128
-- title: Mavic Type Drones
-  count: 28
-- title: Fins/Tails
-  count: 10k+
-- title: Total Money Raised
-  count: 77395$
 ---
 
 # So, what do we do here?
 
 Oh nothing much, we just supply the Ukrainian Armed Forces
 
-We do both manufacturing as well as procurement for stuff like drones
+We do both manufacturing as well as procurement for stuff like this
 
-{% include stat_display.html %}
+{% include stat_display.html stats=site.data.stats.overall_stats %}
 
 And we have many more on the way, and even more so when our small OEM line is at full capacity.
 

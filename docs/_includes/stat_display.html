@@ -1,5 +1,5 @@
 <div class="stats">
-    {% for item in page.stat_items %}
+    {% for item in include.stats %}
 		<div class="stats-item center">
 			<h2>{{ item.title }}: {{ item.count }}</h2>
 		</div>

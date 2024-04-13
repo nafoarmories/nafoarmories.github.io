@@ -9,16 +9,16 @@
         <div>
         {% for pg_post in update_posts %}
           <div class="nafoarms-news">
-            <h1>
-              {{ pg_post.title }}
-            </h1>
-            <a href="{{ pg_post.url | relative_url }}">
+            <a href="{{ pg_post.url | relative_url }}" class="nafoarms-news-link">
+              <h1>
+                {{ pg_post.title }}
+              </h1>
               <img src="{{ pg_post.image | relative_url }}">
+              <blockquote>
+                <p>{{ pg_post.date | date_to_string }} - {{ pg_post.author }}</p>
+                {{ pg_post.excerpt }}
+              </blockquote>
             </a>
-            <blockquote>
-              <p>{{ pg_post.date | date_to_string }} - {{ pg_post.author }}</p>
-              {{ pg_post.excerpt }}
-            </blockquote>
           </div>
         {% endfor %}
         </div>

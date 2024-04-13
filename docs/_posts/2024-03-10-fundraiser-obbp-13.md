@@ -5,21 +5,17 @@ date: 	2024-04-12
 author: Wende
 categories: fundraisers update obbp13
 image: assets/images/gallery/obbp13.png
-stat_items:
-- title: 🎯Goal
-  count: 8638$/11500$
 ---
 
-{% include stat_display.html %}
+{% include stat_display.html stats=site.data.stats.current_fundraiser %}
 
 Helps get more parts for military aid for the Ukrainian Armed Forces!
-
 
 ![obbp13]({{ "assets/images/gallery/obbp13.png" | relative_url }})
 
 {% include donate_button.html %}
 
-In December of 2023 we opened `Workshop №0` in Lviv led by [@SpiderPup](https://twitter.com/SpiderPup69)
+In December of 2023 we opened `Workshop №0` in Lviv led by {% include handle_link.md thing=site.data.twitter.spiderpup %}
 
 We are an international team of volunteers based in Lviv, Ukraine. Dedicated to supporting drone teams, we raise funds and craft cutting-edge equipment, from electronics to radio kits, drones, drop rigs, fins, and `[redacted]`. Brace for more boom 💥
 

@@ -1,0 +1,12 @@
+donation:
+- name: okawo.198@gmail.com
+  img: assets/images/paypal-logo-small.png
+  text: true
+- name: NAFO Armories Monobank Jar
+  img: assets/images/monobank-logo-small.png
+  link: https://send.monobank.ua/jar/41VstyWxB9
+- name: NAFO Armories Etsy Store
+  img: assets/images/etsy-logo-small.png
+  link: https://freeukraineco.etsy.com/
+
+donate_page: /donate/
