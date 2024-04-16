@@ -4,7 +4,7 @@ title:  "Fundraiser - OBBP XIII - Strategic Skies"
 date: 	2024-04-12
 author: Wende
 categories: fundraisers update obbp13
-image: assets/images/gallery/obbp13.png
+image: assets/images/gallery/@NafoArmories.png
 ---
 
 {% include stat_display.html stats=site.data.stats.current_fundraiser %}
