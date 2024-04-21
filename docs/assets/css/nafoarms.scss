@@ -82,6 +82,8 @@ body {
     min-width: 80vw;
     max-width: 100vw;
     height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nafoarms-main p {
@@ -93,6 +95,13 @@ body {
 .nafoarms-main img {
     border-radius: 15px;
     width: min(55rem, 90%);
+}
+
+.nafoarms-main ul {
+    width: min(25vw, 80%);
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
 }
 
 .nafoarms-news {
@@ -370,6 +379,10 @@ body {
     }
 
     .nafoarms-main p {
+        width: 95%;
+    }
+
+    .nafoarms-main ul {
         width: 95%;
     }
 
