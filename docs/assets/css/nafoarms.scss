@@ -79,14 +79,14 @@ body {
     flex: 2;
     padding: 1rem;
     border-radius: 50px;
-    min-width: 80vw;
-    max-width: 100vw;
+    width: 80vw;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .nafoarms-main p {
+    overflow-wrap: break-word;
     width: min(45vw, 80%);
     margin-left: auto;
     margin-right: auto;
@@ -279,7 +279,7 @@ body {
 
 .nafoarms-gallery {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-items: center;
 }
@@ -300,6 +300,18 @@ body {
 
 .nafoarms-gallery img:hover {
     width: 12vw;
+}
+
+.youtube-player {
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 1;
+    height: 310px;
+    width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -375,7 +387,7 @@ body {
     }
 
     .nafoarms-main {
-        max-width: 90vw;
+        width: 90vw;
     }
 
     .nafoarms-main p {
