@@ -5,7 +5,11 @@ permalink: /gallery/
 image: assets/images/pride_100x100.png
 ---
 
-# Gallery
+# Videos
+
+{% include youtube_vod.html video_id="Dt99a0Q-slg" %}
+
+# Pictures
 
 Click on any image to view it in full size
 

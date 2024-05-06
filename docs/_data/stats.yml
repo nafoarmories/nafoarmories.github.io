@@ -8,9 +8,9 @@ define: &total_raised 82806$
 
 overall_stats:
 - title: Drop Rig Systems
-  count: 718
+  count: 738
 - title: Leyleys
-  count: 166
+  count: 196
 - title: Mavic Type Drones
   count: 28
 - title: Fins/Tails

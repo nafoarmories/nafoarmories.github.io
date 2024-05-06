@@ -1,17 +1,17 @@
 ---
 layout: post
 title:  "Fundraiser - OBBP XIII - Strategic Skies"
-date: 	2024-04-12
+date: 2024-05-05
 author: Wende
 categories: fundraisers update obbp13
-image: assets/images/gallery/@NafoArmories.png
+image: assets/images/gallery/leyley-v1.3-pile.png
 ---
 
 {% include stat_display.html stats=site.data.stats.current_fundraiser %}
 
 Helps get more parts for military aid for the Ukrainian Armed Forces!
 
-![obbp13]({{ "assets/images/gallery/obbp13.png" | relative_url }})
+![obbp13]({{ "assets/images/gallery/obbp13-cover-patches.jpg" | relative_url }})
 
 {% include donate_button.html %}
 
