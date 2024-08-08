@@ -5,9 +5,12 @@ date: 	2024-04-20
 author: Wende
 categories: raffles update holiday
 image: assets/images/A816AD71-277A-4085-94D3-1B94EEDF63D6.png
+current_fundraiser:
+- title: 🎯Goal
+  count: 11500$/11500$
 ---
 
-{% include stat_display.html stats=site.data.stats.current_fundraiser %}
+{% include stat_display.html stats=page.current_fundraiser %}
 
 ![raffle-cover]({{ "assets/images/gallery/80E068E5-3587-413A-89D3-6622D426F716.png" | relative_url }})
 
