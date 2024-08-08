@@ -5,9 +5,12 @@ date: 2024-05-05
 author: Wende
 categories: fundraisers update obbp13
 image: assets/images/gallery/leyley-v1.3-pile.png
+current_fundraiser:
+- title: 🎯Goal
+  count: 11500$/11500$
 ---
 
-{% include stat_display.html stats=site.data.stats.current_fundraiser %}
+{% include stat_display.html stats=page.current_fundraiser %}
 
 Helps get more parts for military aid for the Ukrainian Armed Forces!
 

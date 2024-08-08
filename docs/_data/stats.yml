@@ -1,19 +1,19 @@
 current_fundraiser:
 - title: 🎯Goal
-  count: 7749$/10020$
+  count: 7210$/14000$
 
-# calculated as total of the sum of all previous fundraisers (81739$)
+# calculated as total of the sum of all previous fundraisers (95126$)
 # plus the current fundraiser total
-define: &total_raised 89488$
+define: &total_raised 102,336$
 
 overall_stats:
 - title: Drop Rig Systems
-  count: 740
+  count: 800
 - title: Leyleys
-  count: 311
+  count: 570
 - title: Mavic Type Drones
-  count: 28
+  count: 30
 - title: Fins/Tails
-  count: 10k+
+  count: 15k+
 - title: Total Money Raised
   count: *total_raised

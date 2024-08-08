@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Fundraiser - OBBP XIV - Arial Impact for ATEY"
-date: 2024-06-04
+title:  "Fundraiser - OBBP XIV - Arial Impact for ATEY (Closed!)"
+date: 2024-07-09
 author: Wende
 categories: fundraisers update obbp14
-image: assets/images/gallery/obbp14.jpeg
+image: assets/images/gallery/obbp14.1.jpeg
 fundraiser_target:
 - title: DJI Mavic 3
   count: x2
@@ -14,28 +14,28 @@ fundraiser_target:
   count: x12
 - title: Leyleys
   count: x100
+- title: Laptop
+  count: x1
+- title: Ecoflow
+  count: x1
 current_fundraiser:
 - title: 🎯Goal
-  count: 10020$/10020$
+  count: 13387$/13387$
 ---
 
 {% include stat_display.html stats=page.current_fundraiser %}
 
-![obbp13]({{ "assets/images/gallery/obbp14.jpeg" | relative_url }})
+![obbp13]({{ "assets/images/gallery/obbp14.1.jpeg" | relative_url }})
 
-We {% include handle_link.md thing=site.data.twitter.team %} are raising funds for Commander [@SKIF_A_S_G](https://x.com/SKIF_A_S_G) and ATEY Unit for drones, drop rigs, and Leyleys (det💥nat💣rs)
+🥳 YOU DID IT 🥳
 
-{% include donate_button.html %}
+Thanks to you incredible people, the fundraiser is closed!
+
+We'll make another post when everything is delivered to Atey!
 
 # What’s it for:
 
 {% include stat_display.html stats=page.fundraiser_target %}
-
-
-💥$20 or more in donation gets you a message on a fin from [@SignMyGrenade](https://x.com/SignMyGrenade)
-Just tag or DM [@SignMyGrenade](https://x.com/SignMyGrenade) with your donation screenshot & message. Gift your own special greeting to the occupiers.💥
-See their pinned tweet and give them a follow 🫡
-
 
 🎁$50 donation - get a NAFOArmories patch. DM {% include handle_link.md
 thing=site.data.twitter.wende %}
