@@ -1,10 +1,10 @@
 current_fundraiser:
 - title: 🎯Goal
-  count: 8256$/14000$
+  count: 10237$/14000$
 
 # calculated as total of the sum of all previous fundraisers (95126$)
 # plus the current fundraiser total
-define: &total_raised 103,382$
+define: &total_raised 105,363$
 
 overall_stats:
 - title: Drop Rig Systems
