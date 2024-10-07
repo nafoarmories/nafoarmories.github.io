@@ -1,12 +1,17 @@
 current_fundraiser:
 - title: 🎯Goal
-  count: 10237$/14000$
+  tag: goal
+  count: 14000$
 
 # calculated as total of the sum of all previous fundraisers (95126$)
 # plus the current fundraiser total
+# TODO: remove this cuz its old and not used anymore
 define: &total_raised 105,363$
 
 overall_stats:
+- title: Total Money Raised
+  tag: total
+  count: *total_raised
 - title: Drop Rig Systems
   count: 800
 - title: Leyleys
@@ -19,5 +24,3 @@ overall_stats:
   count: 1
 - title: Laptops
   count: 1
-- title: Total Money Raised
-  count: *total_raised

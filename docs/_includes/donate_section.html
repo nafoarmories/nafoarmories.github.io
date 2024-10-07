@@ -6,23 +6,24 @@
 </script>
 
 <div class="dono-elements">
-    {% for item in include.links %}
-    {% if item.text == true %}
-    <div class="link" onClick="copyToClipboard('{{ item.name }}')">
-    {% else %}
-    <div class="link">
+    {% if include.title %}
+    <h2>{{ include.title }}</h2>
     {% endif %}
-        {% if item.img %}
-        <img src="{{ item.img | relative_url }}">
-        {% endif %}
-        {% if item.text == true %}
-        <div class="tooltip">
-            <p class="tooltiptext">Copy to Clipboard</p>
-            <p>{{ item.name }}</p>
-        </div>
-        {% endif %}
+    {% for item in include.links %}
+    <div class="link">
         {% if item.link %}
-        <a href="{{ item.link | relative_url }}">{{ item.name }}</a>
+        <div class="link-pre">
+        <a href="{{ item.link }}">
+            <div class="link-inner">
+            {% endif %}
+                {% if item.img %}
+                <img src="{{ item.img | relative_url }}">
+                {% endif %}
+                <p>{{ item.name }}</p>
+            {% if item.link %}
+            </div>
+        </a>
+        </div>
         {% endif %}
     </div>
     {% endfor %}

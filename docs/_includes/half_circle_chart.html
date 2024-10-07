@@ -1,0 +1,140 @@
+<div class="nafoarms-dono-chart">
+  <canvas id="myChart" style="border-radius: 25px;">Loading...</canvas>
+</div>
+
+<script>
+    console.log(`GET: {{ include.data.api }}`);
+    const resp = fetch('https://api.nafoarmories.org/{{ include.data.api }}');
+    resp.then((res) => {
+        if (!res.ok) {
+            return "ERROR";
+        }
+        return res.json();
+    }).then((promise_data) => {
+        let ctx = document.getElementById('myChart');
+
+        const chartMin = {{ include.data.min }};
+        const chartValue = promise_data.total.replace("$", "");
+        const chartMax = {{ include.data.max }};
+
+
+        const data = [chartValue, chartMax-chartValue];
+        const labels = ["Total Donations", "Left to Go"];
+        const chartColors = [
+          "#22ffc7",
+          "white"
+        ];
+
+        const offBySize = (x, y, size, yOff=0) => {
+            return {
+                x: (x),
+                y: (y + (size.actualBoundingBoxAscent + size.actualBoundingBoxDescent) /2 +
+                yOff)
+            };
+        };
+
+        const plugin = {
+          id: 'showMinMax',
+          defaults: {
+                min: "0",
+                current: "50",
+                max: "100",
+                font: "Arial"
+          },
+          beforeDraw: (chart, args, options) => {
+            const {ctx} = chart;
+            let data = chart._metasets[0].data[0];
+            let radius = data.innerRadius + (data.outerRadius - data.innerRadius) / 2;
+            let centerX = data.x;
+            let centerY = data.y;
+
+            let left = centerX - radius;
+            let right = centerX + radius;
+
+            ctx.save();
+
+            ctx.beginPath();
+            const min_pos = offBySize(
+                    left,
+                    centerY,
+                    ctx.measureText(chart.options.plugins.showMinMax.min),
+                    20);
+            ctx.font = `20px ${chart.options.plugins.showMinMax.font}`;
+            ctx.textAlign = "center";
+            ctx.fillText(
+                    chart.options.plugins.showMinMax.min,
+                    min_pos.x,
+                    min_pos.y);
+            ctx.stroke();
+
+            ctx.beginPath();
+            const curr_pos = offBySize(
+                    centerX,
+                    centerY,
+                    ctx.measureText(chart.options.plugins.showMinMax.current),
+                    -radius/3);
+            ctx.font = `18px ${chart.options.plugins.showMinMax.font}`;
+            ctx.textAlign = "center";
+            ctx.fillText(
+                    chart.options.plugins.showMinMax.current,
+                    curr_pos.x,
+                    curr_pos.y);
+            ctx.stroke();
+
+            ctx.beginPath();
+            const max_pos = offBySize(
+                    right,
+                    centerY,
+                    ctx.measureText(chart.options.plugins.showMinMax.max),
+                    10);
+            ctx.font = `20px ${chart.options.plugins.showMinMax.font}`;
+            ctx.textAlign = "center";
+            ctx.fillText(
+                    chart.options.plugins.showMinMax.max,
+                    max_pos.x,
+                    max_pos.y);
+            ctx.stroke();
+
+            ctx.restore();
+          }
+        };
+
+        Chart.register(plugin);
+
+          new Chart(ctx, {
+            type: "doughnut",
+              data: {
+                labels: labels,
+                datasets: [{
+                  backgroundColor: chartColors,
+                  data: data
+                }]
+              },
+
+              options: {
+                maintainAspectRatio: false,
+                radius: '80%',
+                rotation: -90,
+                circumference: 180,
+                scale: {
+                    ticks: {min:0, max:14000}
+                },
+                plugins: {
+                    title: {
+                      display: true,
+                      color: "black",
+                      font: {
+                            size: 30
+                      },
+                      text: "Total raised"
+                    },
+                    showMinMax: {
+                        min: `${chartMin}$`,
+                        max: `${chartMax}$`,
+                        current: `${chartValue}$`
+                    }
+                }
+              }
+          });
+    });
+</script>

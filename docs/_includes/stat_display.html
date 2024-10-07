@@ -1,7 +1,41 @@
 <div class="stats">
+    {% if include.title %}
+	<h2>{{ include.title }}</h2>
+    {% endif %}
     {% for item in include.stats %}
+	{% if item.tag == "total" %}
+		<div class="stats-item center">
+	<h2>{{ item.title }}: <span id="{{ include.api_id }}">Loading... </span></h2>
+		</div>
+	{% elsif item.tag == "goal" %}
+		<div class="stats-item center">
+		    <h2>{{ item.title }}: <span id="{{ include.api_id }}">Loading... </span> / {{ item.count }}</h2>
+		</div>
+	{% else %}
 		<div class="stats-item center">
 			<h2>{{ item.title }}: {{ item.count }}</h2>
 		</div>
+	{% endif %}
     {% endfor %}
 </div>
+
+{% if include.api %}
+
+<script>
+(async () => {
+try {
+    const resp = await fetch('https://api.nafoarmories.org/{{ include.api }}');
+    console.log(`GET: {{ include.api }}`);
+
+if (resp.ok) {
+    const data = await resp.json();
+    document.getElementById("{{ include.api_id }}").innerHTML = data.total;
+}
+} catch (err) {
+    console.log(err);
+    document.getElementById("{{ include.api_id }}").innerHTML = "ERROR";
+}
+})();
+</script>
+
+{% endif %}

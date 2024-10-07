@@ -5,13 +5,9 @@ permalink: /donate/
 image: assets/images/pride_100x100.png
 ---
 
-# Donate
+{% include donate_section.html links=site.data.links.donation title="Donation options" %}
 
-There are a few ways you can help us financially
-
-{% include donate_section.html links=site.data.links.donation %}
-
-If you want to get a patch, for a donation of 50$ or more, message {% include handle_link.md thing=site.data.twitter.wende %} afterwards!
+If you want to get a patch, donate 50$ or more with "#NAPATCH" in the donation message, and ping {% include handle_link.md thing=site.data.twitter.wende %} afterwards!
 
 ## Where Your Money Goes
 

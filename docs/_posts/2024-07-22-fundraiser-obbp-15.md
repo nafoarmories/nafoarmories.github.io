@@ -14,9 +14,20 @@ fundraiser_target:
   count: x100
 - title: Ecoflow
   count: x3
+
+fundraiser_data:
+- title: 🎯Goal
+  tag: goal
+  count: 14000$
+
+fundraiser_chart_data:
+  min: 0
+  max: 14000
+  api: donations/get/default/total
 ---
 
-{% include stat_display.html stats=site.data.stats.current_fundraiser %}
+{% include stat_display.html stats=page.fundraiser_data
+api="donations/get/default/total" api_id="goal" %}
 
 ![obbp13]({{ "assets/images/gallery/obbp15.jpeg" | relative_url }})
 
@@ -24,6 +35,7 @@ fundraiser_target:
 
 ## 𝐎𝐩𝐞𝐫𝐚𝐭𝐢𝐨𝐧 𝐁𝐨𝐨𝐦 𝐁𝐨𝐨𝐦 𝐏𝐨𝐰 𝐗𝐕: 𝐁𝐚𝐫𝐛𝐞𝐜𝐮𝐛𝐞𝐬
 
+{% include half_circle_chart.html data=page.fundraiser_chart_data %}
 
 # What’s it for:
 
