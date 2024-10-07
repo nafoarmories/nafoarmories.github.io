@@ -5,6 +5,7 @@
 layout: home
 title:  "NAFO Armories"
 image: assets/images/pride_100x100.png
+
 ---
 
 # So, what do we do here?

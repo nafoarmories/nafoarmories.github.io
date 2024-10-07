@@ -3,6 +3,10 @@
         {% assign latest_update = site.posts | where: "categories", "update" | first %}
         <div class="nafoarms-main center">
 
+          {% if page.enable_translate %}
+          {% include lang-toggle.html %}
+          {% endif %}
+
           {% if latest_update %}
           <div>
             <div class="nafoarms-news">

@@ -5,6 +5,7 @@ date: 2024-07-23
 author: Wende
 categories: fundraisers update obbp15
 image: assets/images/gallery/obbp15.jpeg
+
 fundraiser_target:
 - title: 8" FPV Drones
   count: x16
