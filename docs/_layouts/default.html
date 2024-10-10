@@ -1,5 +1,9 @@
 {% include header.html %}
       <div class="nafoarms-main center">
+        {% if page.enable_translate %}
+        {% include lang-toggle.html %}
+        {% endif %}
+
         {{ content }}
       </div>
 {% include footer.html %}

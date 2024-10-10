@@ -1,0 +1,39 @@
+
+<div class="nafoarms-recent-dono-outter">
+    <h2>Recent donations</h2>
+    <div class="nafoarms-recent-donations nafoarms-recent-donations-rounded">
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody id="recent-dono">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+(async () => {
+try {
+    const resp = await fetch('https://api.nafoarmories.org/donations/get/recent');
+    console.log(`GET: donations/get/recent`);
+
+if (resp.ok) {
+    const data = await resp.json();
+    console.log(data);
+    for (const itm in data) {
+        console.log(data[itm]);
+        document.getElementById("recent-dono").innerHTML +=
+                `<tr><td>${data[itm].time}</td><td>${data[itm].amount}</td><td>${data[itm].name}</td></tr>`;
+    }
+}
+} catch (err) {
+    console.log(err);
+    // document.getElementById("{{ include.api_id }}").innerHTML = "ERROR";
+}
+})();
+</script>

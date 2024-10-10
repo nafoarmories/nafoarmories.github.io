@@ -5,6 +5,10 @@
           {{ content }}
         </div>
 
+        {% if page.enable_translate %}
+        {% include lang-toggle.html %}
+        {% endif %}
+
         {% assign update_posts = site.posts | sort: "date" | reverse %}
         <div>
         {% for pg_post in update_posts %}

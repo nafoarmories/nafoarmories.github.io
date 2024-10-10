@@ -10,6 +10,39 @@
     <link rel="stylesheet" href="{{ '/assets/css/nafoarms.css' | relative_url }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+    <!-- <script src="https://unpkg.com/htmx.org@2.0.3" integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous"></script> -->
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/chart.js">
+    </script>
+
+    <script>
+        function toggleLang() {
+            const ua = document.querySelectorAll("div.lang-ua");
+            const eng = document.querySelectorAll("div.lang-eng");
+
+            if (eng[0].getAttribute('about') === "") {
+                for (let i=0; i<ua.length;i++) {
+                    ua[i].setAttribute('style', "display: none; visibility: hidden;");
+                    ua[i].setAttribute('about', "");
+                }
+                for (let i=0; i<eng.length;i++) {
+                    eng[i].setAttribute('style', "display: block; visibility: visible;");
+                    eng[i].setAttribute('about', "shown");
+                }
+            } else {
+                for (let i=0; i<ua.length;i++) {
+                    ua[i].setAttribute('style', "display: block; visibility: visible;");
+                    ua[i].setAttribute('about', "shown");
+                }
+                for (let i=0; i<eng.length;i++) {
+                    eng[i].setAttribute('style', "display: none; visibility: hidden;");
+                    eng[i].setAttribute('about', "");
+                }
+            }
+        }
+    </script>
+
     {% include head-custom.html %}
   </head>
   <body>
